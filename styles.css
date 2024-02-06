@@ -1,9 +1,5 @@
-h1 {
-    color: white;
-}
-
 body{
-    background-image:url('background-image.mp4');
+    background-image:url('background.mp4');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,11 +10,4 @@ body{
 #logo{
     width: 300px;
     height: auto;
-}
-
-#planetgif{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }

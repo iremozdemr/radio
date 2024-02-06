@@ -4,23 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     <title>space radio</title>
 </head>
 <body>
-    <img src="logo_size_invert-removebg-preview.png" alt="my website's logo" id="logo"/>
-    <div id="planetgif">
-        <img src="planetgif.gif"/>
-    </div>
+    <img id="logo" src="logo_size_invert-removebg-preview.png" alt="my website's logo"/>
+    <model-viewer src="earth.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="jupiter.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="mars.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="mercury.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="neptune.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="pluto.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="saturn.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="uranus.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    <model-viewer src="venus.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="commerce" poster="poster.webp" shadow-intensity="1">
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+            view in your space
+        </button>
+    </model-viewer>
+    </model-viewer>
 </body>
-</html>
+</html> 
 
 <!--<iframe style="border-radius:20px" src="https://open.spotify.com/embed/playlist/5LbIUikEtLe91WF5fAgiFW?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
 
 <!--logo:-->
 <!--https://studio.tailorbrands.com-->
-
-<!--planet gif:-->
-<!--https://commons.wikimedia.org/wiki/File:Rotating_earth_animated_transparent.gif-->
-
-<!--background image:-->
-<!---->
