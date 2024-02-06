@@ -4,8 +4,8 @@ h1 {
 
 body{
     background-image:url('background-image.mp4');
-    background-size:100%;
-    background-repeat: repeat-y;
+    background-size:cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     height:100%;
     width:100%;
