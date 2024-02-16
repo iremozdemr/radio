@@ -10,6 +10,8 @@ body{
 #logo{
     width: 300px;
     height: auto;
+    padding-bottom: 300px;
+    display: inline-block;
 }
 
 html{
@@ -19,3 +21,13 @@ html{
 }
 /*3dlerin highlight edilmesini önledim*/
 /*sakın silme*/
+
+model-viewer{
+    width:600px;
+    height:600px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+}
