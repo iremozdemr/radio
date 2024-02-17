@@ -15,9 +15,9 @@ body{
 }
 
 html{
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    -webkit-user-select: none; /* safari */
+    -ms-user-select: none; /* ie 10 and ie 11 */
+    user-select: none; /* standard syntax */
 }
 /*3dlerin highlight edilmesini önledim*/
 /*sakın silme*/
@@ -30,4 +30,27 @@ model-viewer{
     left: 50%;
     transform: translateX(-50%);
     padding-top: 50px;
+}
+
+#left{
+    width: 75px;
+    height: 75px;
+    padding-bottom: 200px;
+    position: absolute;
+    left: 275px; /* Adjust this value to move the image */
+    top: 335px;
+}
+
+#right{
+    width: 75px;
+    height: 75px;
+    padding-bottom: 200px;
+    padding-left: 800px;
+}
+
+#go-to-planet {
+    position: absolute;
+    left: 50%;
+    bottom: 20px; /* Adjust as needed */
+    transform: translateX(-50%);
 }
