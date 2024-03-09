@@ -89,3 +89,63 @@ model-viewer{
     transform: translateX(-50%);
     top: 50px; /* Adjust the top position if needed */
 }
+
+#mercury {
+    width: 600px; /* Set the same width as specified for the model-viewer */
+    height: 600px; /* Set the same height as specified for the model-viewer */
+    display: none; /* Initially hide the Jupiter model */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; /* Adjust the top position if needed */
+}
+
+#neptune {
+    width: 600px; /* Set the same width as specified for the model-viewer */
+    height: 600px; /* Set the same height as specified for the model-viewer */
+    display: none; /* Initially hide the Jupiter model */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; /* Adjust the top position if needed */
+}
+
+#pluto {
+    width: 600px; /* Set the same width as specified for the model-viewer */
+    height: 600px; /* Set the same height as specified for the model-viewer */
+    display: none; /* Initially hide the Jupiter model */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; /* Adjust the top position if needed */
+}
+
+#saturn {
+    width: 600px; /* Set the same width as specified for the model-viewer */
+    height: 600px; /* Set the same height as specified for the model-viewer */
+    display: none; /* Initially hide the Jupiter model */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; /* Adjust the top position if needed */
+}
+
+#uranus {
+    width: 600px; /* Set the same width as specified for the model-viewer */
+    height: 600px; /* Set the same height as specified for the model-viewer */
+    display: none; /* Initially hide the Jupiter model */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; /* Adjust the top position if needed */
+}
+
+#venus {
+    width: 600px; /* Set the same width as specified for the model-viewer */
+    height: 600px; /* Set the same height as specified for the model-viewer */
+    display: none; /* Initially hide the Jupiter model */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px; /* Adjust the top position if needed */
+}
