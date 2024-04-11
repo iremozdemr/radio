@@ -44,9 +44,9 @@ body {
 }
 
 html{
-    -webkit-user-select: none; /* safari */
-    -ms-user-select: none; /* ie 10 and ie 11 */
-    user-select: none; /* standard syntax */
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 /*3dlerin highlight edilmesini önledim*/
 /*sakın silme*/
@@ -54,99 +54,180 @@ html{
 model-viewer{
     width:600px;
     height:600px;
-    /*display: inline-block;*/
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     padding-top: 50px;
 }
 
+@media (max-width: 768px) {
+    model-viewer {
+        width: 80%;
+        height: 80vw;
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    model-viewer {
+        width: 90%;
+        height: 90vw;
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
 #earth {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
+    width: 600px; 
+    height: 600px; 
     display: inline-block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px;
 }
 
 #jupiter {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px;
 }
 
 #mars {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px; 
 }
 
 #mercury {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px; 
 }
 
 #neptune {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px;
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px;
 }
 
 #pluto {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px; 
 }
 
 #saturn {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px; 
 }
 
 #uranus {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px; 
 }
 
 #venus {
-    width: 600px; /* Set the same width as specified for the model-viewer */
-    height: 600px; /* Set the same height as specified for the model-viewer */
-    display: none; /* Initially hide the Jupiter model */
+    width: 600px; 
+    height: 600px; 
+    display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 50px; /* Adjust the top position if needed */
+    top: 50px; 
 }
+
+/*
+body {
+    background-image: url('background.mp4');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; 
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+}
+
+.navigation model-viewer {
+    order: 2;
+    width: 600px;
+    height: 600px;
+}
+
+.navigation img {
+    width: 50px;
+    height: 50px;
+}
+
+#go {
+    font-size: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.navigation #left {
+    order: 1;
+    padding-left: 10em;
+}
+
+.navigation #right {
+    order: 3;
+    padding-right: 10em;
+}
+
+html {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+*/
