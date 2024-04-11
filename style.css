@@ -1,17 +1,46 @@
-body{
-    background-image:url('background.mp4');
-    background-size:cover;
+body {
+    background-image: url('background.mp4');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
-#logo{
-    width: 300px;
+#logo {
+    max-width: 100%;
     height: auto;
-    padding-bottom: 300px;
-    display: inline-block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+}
+
+.navigation img {
+    padding-top: 8em;
+    width: 75px;
+    height: 75px;
+    top: 300px;
+}
+
+.navigation #left {
+    padding-left: 5em;
+}
+
+.navigation #right {
+    padding-right: 5em;
+}
+
+#go {
+    font-size: 20px;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
 
 html{
@@ -30,34 +59,6 @@ model-viewer{
     left: 50%;
     transform: translateX(-50%);
     padding-top: 50px;
-}
-
-#left{
-    width: 75px;
-    height: 75px;
-    padding-bottom: 200px;
-    position: absolute;
-    left: 275px; /* Adjust this value to move the image */
-    top: 335px;
-}
-
-#right{
-    width: 75px;
-    height: 75px;
-    padding-bottom: 200px;
-    padding-left: 800px;
-}
-
-#go{
-    font-size: 20px;
-    border-radius: 20px;
-    width: 200px;
-    height: auto;
-    position: absolute;
-    left: 50%;
-    bottom: 20px; 
-    transform: translateX(-50%);
-    bottom: 75px;
 }
 
 #earth {
