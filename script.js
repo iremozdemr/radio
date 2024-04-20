@@ -26,6 +26,16 @@ document.getElementById('left-img').addEventListener('click', function() {
     document.getElementById(planets[currentPlanetIndex]).style.display = 'inline-block'; // Yeni gezegeni görüntüle.
 });
 
+/*
 document.getElementById('go-button').addEventListener('click', function() {
     window.location.href = './earth/earthpage.html'; // 'earth' dizinindeki 'index.html' dosyasına yönlendirir
+});
+*/
+
+document.getElementById('go-button').addEventListener('click', function() {
+    // Mevcut gezegenin adını al
+    const currentPlanet = planets[currentPlanetIndex];
+
+    // Gezegenin adına göre uygun sayfaya yönlendir
+    window.location.href = `./${currentPlanet}/${currentPlanet}page.html`;
 });
