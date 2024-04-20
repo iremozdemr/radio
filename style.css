@@ -1,4 +1,14 @@
-body {
+html{
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+/*3dlerin highlight edilmesini önledim*/
+/*sakın silme*/
+
+body{
     background-image: url('background.mp4');
     background-size: cover;
     background-repeat: no-repeat;
@@ -7,11 +17,47 @@ body {
     width: 100%;
 }
 
-#logo {
-    max-width: 100%;
+#my-logo-img{
+    display: inline-block;
+    width: 30vh;
     height: auto;
 }
 
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container model-viewer{
+    order: 2;
+    width: 600px;
+    height: 600px;
+}
+
+.flex-container img{
+    width: 50px;
+    height: 50px;
+}
+
+.left-div {
+    order: 1;
+}
+
+.right-div {
+    order: 3;
+}
+
+#earth{
+    order: 2;
+}
+
+#jupiter, #mars, #mercury, #neptune, #pluto, #saturn, #uranus, #venus{
+    order: 2;
+    display: none; 
+}
+
+/*
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -43,14 +89,6 @@ body {
     margin: 20px auto;
 }
 
-html{
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
-}
-/*3dlerin highlight edilmesini önledim*/
-/*sakın silme*/
-
 model-viewer{
     width:600px;
     height:600px;
@@ -60,27 +98,9 @@ model-viewer{
     padding-top: 50px;
 }
 
-@media (max-width: 768px) {
-    model-viewer {
-        width: 80%;
-        height: 80vw;
-        max-width: 400px;
-        max-height: 400px;
-    }
-}
-
-@media (max-width: 480px) {
-    model-viewer {
-        width: 90%;
-        height: 90vw;
-        max-width: 300px;
-        max-height: 300px;
-    }
-}
-
 #earth {
-    width: 600px; 
-    height: 600px; 
+    width:600px;
+    height:600px;
     display: inline-block;
     position: absolute;
     left: 50%;
@@ -88,16 +108,18 @@ model-viewer{
     top: 50px;
 }
 
-#jupiter {
-    width: 600px; 
-    height: 600px; 
+#jupiter, #mars, #mercury, #neptune, #pluto, #saturn, #uranus, #venus{
+    width:600px;
+    height:600px;
     display: none; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 50px;
 }
+*/
 
+/*
 #mars {
     width: 600px; 
     height: 600px; 
@@ -166,68 +188,5 @@ model-viewer{
     left: 50%;
     transform: translateX(-50%);
     top: 50px; 
-}
-
-/*
-body {
-    background-image: url('background.mp4');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0; 
-    font-family: Arial, sans-serif; 
-}
-
-#logo {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px; 
-}
-
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 20px;
-}
-
-.navigation model-viewer {
-    order: 2;
-    width: 600px;
-    height: 600px;
-}
-
-.navigation img {
-    width: 50px;
-    height: 50px;
-}
-
-#go {
-    font-size: 20px;
-    border-radius: 20px;
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-}
-
-.navigation #left {
-    order: 1;
-    padding-left: 10em;
-}
-
-.navigation #right {
-    order: 3;
-    padding-right: 10em;
-}
-
-html {
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
 }
 */
