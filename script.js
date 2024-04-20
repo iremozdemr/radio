@@ -26,6 +26,6 @@ document.getElementById('left-img').addEventListener('click', function() {
     document.getElementById(planets[currentPlanetIndex]).style.display = 'inline-block'; // Yeni gezegeni görüntüle.
 });
 
-document.getElementById('go').addEventListener('click', function() {
+document.getElementById('go-button').addEventListener('click', function() {
     window.location.href = './earth/earthpage.html'; // 'earth' dizinindeki 'index.html' dosyasına yönlendirir
 });
