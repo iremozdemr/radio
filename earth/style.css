@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
+
+body {
+    background-image: url("earth-background.jpg");
+    background-size: cover;
+    background-position: center top;   
+}
+
 iframe {
     margin-top: 150px; 
     margin-left: 50px; 
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap');
 
 * {
     margin: 0;
