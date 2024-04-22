@@ -5,9 +5,19 @@ body {
     background-position: center top;   
 }
 
+/*
 iframe {
     margin-top: 150px; 
     margin-left: 50px; 
+}
+*/
+
+#spotify{
+    width: 25%;
+    height: 500px;
+    border-radius:12px;
+    margin-top: 150px;
+    margin-left: 50px;
 }
 
 * {
