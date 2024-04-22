@@ -3,8 +3,7 @@ let currentPlanetIndex = 0;
 
 const planets = ['earth', 'jupiter', 'mars','mercury','neptune','pluto','saturn','uranus','venus']; // Gezegenlerin sırasını tanımlar.
 
-/*
-document.getElementById('right-img').addEventListener('click', function() {
+document.getElementById('right-button').addEventListener('click', function() {
     document.getElementById(planets[currentPlanetIndex]).style.display = 'none'; // Mevcut gezegeni gizle.
 
     currentPlanetIndex++; // Gezegen dizinini bir artır.
@@ -16,7 +15,7 @@ document.getElementById('right-img').addEventListener('click', function() {
     document.getElementById(planets[currentPlanetIndex]).style.display = 'inline-block'; // Yeni gezegeni görüntüle.
 });
 
-document.getElementById('left-img').addEventListener('click', function() {
+document.getElementById('left-button').addEventListener('click', function() {
     document.getElementById(planets[currentPlanetIndex]).style.display = 'none'; // Mevcut gezegeni gizle.
 
     currentPlanetIndex--; // Gezegen dizinini bir azalt.
@@ -27,8 +26,6 @@ document.getElementById('left-img').addEventListener('click', function() {
 
     document.getElementById(planets[currentPlanetIndex]).style.display = 'inline-block'; // Yeni gezegeni görüntüle.
 });
-*/
-
 
 /*
 document.getElementById('go-button').addEventListener('click', function() {
