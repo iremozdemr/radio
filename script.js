@@ -1,7 +1,7 @@
 let currentPlanetIndex = 0; 
 //başlangıçta "earth" gezegeni görüntülenir
 
-const planets = ['earth', 'jupiter', 'mars','mercury','neptune','pluto','saturn','uranus','venus'];
+const planets = ['earth','mars','jupiter','saturn','uranus','neptune','pluto','mercury','venus'];
 //gezegenlerin sırasını tanımlar
 
 document.getElementById('right-button').addEventListener('click', function() {

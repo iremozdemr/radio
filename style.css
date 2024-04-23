@@ -18,28 +18,27 @@ body{
 }
 
 #my-logo-img{
-    margin-top: -50px;
-    display: inline-block;
-    width: 30vh;
-    height: auto;
+  display: inline-block;
+  width: 60vh;
+  height: auto;
 }
 
 .flex-container{
-    margin-top: -20px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0;
-    gap: 5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0;
+  gap: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex-container model-viewer{
-    order: 2;
-    width: 600px;
-    height: 600px;
+  order: 2;
+  width: 550px;
+  height: 550px;
 }
 
 .flex-container img{
