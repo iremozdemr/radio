@@ -8,6 +8,7 @@ html{
 /*3dlerin highlight edilmesini önledim*/
 /*sakın silme*/
 
+/*
 body{
   background-image: url('./background.mp4');
   background-size: cover;
@@ -16,6 +17,7 @@ body{
   height: 100%;
   width: 100%;
 }
+*/
 
 #my-logo-img{
   display: inline-block;
