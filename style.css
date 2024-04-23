@@ -1,21 +1,23 @@
 html{
-    padding: 0;
-    margin: 0;
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none; 
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
 }
 /*3dlerin highlight edilmesini önledim*/
 /*sakın silme*/
 
+/*
 body{
-    background-image: url('./background.mp4');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
+  background-image: url('./background.mp4');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
+*/
 
 #my-logo-img{
   display: inline-block;
