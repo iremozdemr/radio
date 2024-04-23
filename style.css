@@ -9,7 +9,7 @@ html{
 /*sakın silme*/
 
 body{
-    background-image: url('background.mp4');
+    background-image: url('./background.mp4');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
