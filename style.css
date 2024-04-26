@@ -1,15 +1,17 @@
 html{
   padding: 0;
   margin: 0;
+  /*
   -webkit-user-select: none;
   -ms-user-select: none; 
   user-select: none; 
+  */
 }
 /*3dlerin highlight edilmesini önledim*/
 /*sakın silme*/
 
 body{
-  background-image: url('./galaxy_space.mov');
+  background-image: url('./background.mp4');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
