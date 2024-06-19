@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <style>
-        body {
-        background-image: url("earth-background.jpg"); 
-    }
-    </style>
-    <link rel="stylesheet" href="../style-planets.css">
     <title>earth</title>
+    <link rel="stylesheet" href="../style-planets.css">
 </head>
 <body>
-    <iframe 
-    id="spotify"
-    src="https://open.spotify.com/embed/playlist/2EIqlPcVMRx0MXU96szswx?utm_source=generator" 
-    frameBorder="0" 
-    allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy">
+    <div class="todo-container">
+        <h2>Completed Items: <span id="completed-count">0</span> / <span id="total-count">0</span></h2>
+        <ul id="task-list">
+            <!-- list items will be added here -->
+        </ul>
+        <div class="input-group">
+            <input type="text" id="new-task" placeholder="+ Add new task">
+        </div>
+    </div>
+
+    <iframe
+        id="spotify"
+        src="https://open.spotify.com/embed/playlist/2EIqlPcVMRx0MXU96szswx?utm_source=generator"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
     </iframe>
-    <div id="container">
-        <button class="btn-add">add note</button>
-    </div>  
+
     <script src="../script-planets.js"></script>
 </body>
 </html>

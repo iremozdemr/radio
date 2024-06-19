@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <style>
-        body {
-        background-image: url("neptune-background.jpg"); 
-    }
-    </style>
     <link rel="stylesheet" href="../style-planets.css">
-    <title>earth</title>
+    <title>neptune</title>
 </head>
 <body>
+    <div class="todo-container">
+        <h2>Completed Items: <span id="completed-count">0</span> / <span id="total-count">0</span></h2>
+        <ul id="task-list">
+            <!-- list items will be added here -->
+        </ul>
+        <div class="input-group">
+            <input type="text" id="new-task" placeholder="+ Add new task">
+        </div>
+    </div>
+    
     <iframe 
     id="spotify"
     src="https://open.spotify.com/embed/playlist/3wSyAUuHkCcrQzTI5EMm7Z?utm_source=generator" 
@@ -21,9 +26,6 @@
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
     loading="lazy">
     </iframe>
-    <div id="container">
-        <button class="btn-add">Add Note</button>
-    </div>  
     <script src="../script-planets.js"></script>
 </body>
 </html>

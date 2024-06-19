@@ -1,70 +1,48 @@
-const containerElement = document.getElementById("container");
-const btnAdd = document.getElementsByClassName("btn-add")[0];
-
-function getAppStorage() {
-    return JSON.parse(localStorage.getItem("joes-app") || "[]");
-}
-
-getAppStorage().forEach(element => {
-    const textElement = createTextElement(element.id, element.content);
-    containerElement.insertBefore(textElement, btnAdd);
-});
-
-function createTextElement(id, content) {
-    const textElement = document.createElement('textarea');
-    textElement.classList.add('sticky');
-    textElement.value = content;
-    textElement.placeholder = 'Enter Your Notes';
-
-    textElement.addEventListener("change", () => {
-        updateNote(id, textElement.value);
-    });
-
-    textElement.addEventListener("dblclick", () => {
-        const check = confirm("Are You Sure to Delete ?");
-        if (check) {
-            deleteNotes(id, textElement);
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('new-task').addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            addTask();
         }
     });
+    updateCounts();
+});
 
-    return textElement;
-}
+function addTask() {
+    const taskInput = document.getElementById('new-task');
+    const taskText = taskInput.value.trim();
+    if (taskText !== '') {
+        const taskList = document.getElementById('task-list');
+        const listItem = document.createElement('li');
 
-// Add New Sticky Note
-function addSticky() {
-    const notes = getAppStorage();
-    const noteObject = {
-        id: Math.floor(Math.random() * 100000),
-        content: ""
-    };
-    const textElement = createTextElement(noteObject.id, noteObject.content);
-    containerElement.insertBefore(textElement, btnAdd);
-    notes.push(noteObject);
-    saveNotes(notes);
-    btnAdd.style.display = "none"; // Add note butonunu gizle
-}
+        listItem.innerHTML = `
+            <input type="checkbox" class="checkbox" onclick="toggleTask(this)">
+            <span class="task-text">${taskText}</span>
+            <span class="delete" onclick="removeTask(this)">&#x2716;</span>
+        `;
 
-btnAdd.addEventListener('click', () => addSticky());
-
-function saveNotes(notes) {
-    localStorage.setItem("joes-app", JSON.stringify(notes));
-}
-
-// Update Sticky Note
-function updateNote(id, content) {
-    const notes = getAppStorage();
-    const updateElement = notes.find(note => note.id == id);
-    if (updateElement) {
-        updateElement.content = content;
-        saveNotes(notes);
+        taskList.appendChild(listItem);
+        taskInput.value = '';
+        updateCounts();
     }
 }
 
-function deleteNotes(id, textElement) {
-    const notes = getAppStorage().filter(note => note.id != id);
-    saveNotes(notes);
-    containerElement.removeChild(textElement);
-    if (notes.length === 0) {
-        btnAdd.style.display = "block"; // Eğer not kalmadıysa Add note butonunu göster
-    }
+function removeTask(taskElement) {
+    const taskItem = taskElement.parentElement;
+    taskItem.remove();
+    updateCounts();
+}
+
+function toggleTask(checkbox) {
+    const taskItem = checkbox.parentElement;
+    taskItem.classList.toggle('completed');
+    updateCounts();
+}
+
+function updateCounts() {
+    const taskList = document.getElementById('task-list');
+    const totalTasks = taskList.children.length;
+    const completedTasks = taskList.querySelectorAll('li.completed').length;
+
+    document.getElementById('completed-count').innerText = completedTasks;
+    document.getElementById('total-count').innerText = totalTasks;
 }
